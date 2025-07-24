@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment002</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for cart icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav
+        class="bg-white p-4 shadow-sm rounded-lg mx-auto mt-4 max-w-7xl flex items-center justify-between"
+      >
+        <div class="flex items-center space-x-2">
+          <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="h-10 w-20 rounded-full"
+          />
+        </div>
+
+        <div class="hidden md:flex decoration-black-15 font space-x-8">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors duration-200"
+            >Shop</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-200 transition-colors duration-200"
+            >About us</a
+          >
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="flex items-center space-x-2">
+          <i class="fas fa-shopping-cart text-gray-600 text-lg"></i>
+          <span class="text-gray-600">Cart ($56)</span>
+        </div>
+
+        <!-- Mobile Menu Button (Hamburger) -->
+        <div class="md:hidden">
+          <button class="text-gray-600 focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+      <section class="header-body">
+        <div>
+          <h1 class="header-title">
+            ALWAYS <span style="color: #e95a08"> FRESH FLOWERS </span>
+          </h1>
+          <div class="info-1">
+            <p class="dark-2">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img class="hero-flower" src="assets/hero-flower.png" />
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="section-style">
+        <div class="image-container">
+          <img
+            src="assets/trusted-badge.png"
+            alt="Base Image"
+            class="overlay-image"
+          />
+          <img
+            src="assets/flower-store.png"
+            alt="Overlay Image"
+            class="base-image"
+          />
+        </div>
+
+        <div class="items">
+          <h3 class="title-style">
+            Flower & Plants<br />
+            Lover
+          </h3>
+          <nav>
+            <ul class="info-2">
+              <li style="padding-top: 10px">
+                <p class="dark-2">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+              <li style="padding-top: 10px">
+                <p class="dark-2">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+              <li style="padding-top: 10px">
+                <p class="dark-2">
+                  Indulge your senses with the beauty and fragrance of our fresh
+                  flower shop. From classic roses to exotic blooms, we offer a
+                  wide variety of fresh.
+                </p>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section>
+        <div class="lates-deals">
+          <h3 style="font-size: 50px">
+            <span style="color: #e95a08">Latest</span> Deals
+          </h3>
+          <p style="height: 50px" class="dark-2">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From </br> classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
+        <div class="image-container-2">
+          <h3>60% Off | Bloom Plant</h3>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
