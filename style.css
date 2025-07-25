@@ -25,6 +25,7 @@
   height: 108px;
   margin-left: 140px;
   padding-top: 10px;
+  margin-bottom: 150px;
 }
 .dark-2 {
   color: #727272;
@@ -140,4 +141,24 @@
   text-align: center;
   justify-content: center;
   padding-top: 150px;
+}
+.footer-style {
+  width: 359px;
+  height: 179px;
+  margin-left: 150px;
+}
+.link-section {
+  display: flex;
+  margin-top: 50px;
+}
+.navber {
+  display: flex;
+  color: #727272;
+}
+.image-container-3 {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  gap: 50px;
+  margin-left: 100px;
 }
