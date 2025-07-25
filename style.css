@@ -68,8 +68,8 @@
 
 .info-2 {
   list-style: disc;
-  width: 450px;
-  height: 100px;
+  /* width: 450px;
+  height: 100px; */
   color: #727272;
 }
 .items {
