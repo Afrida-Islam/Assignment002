@@ -133,14 +133,40 @@
 .colorful-bunch {
   background-image: url(assets/news-letter-bg.png);
   background-size: cover;
-  width: 1440px;
-  height: 500px;
-  margin-top: 100px;
+  background-position: center; /* Center the background image */
+  width: 100%; /* Make it responsive to the parent's width */
+  max-width: 1440px; /* Set a maximum width for larger screens */
+  height: clamp(300px, 50vw, 500px); /* Use clamp for flexible height */
+  margin-top: 50px; /* Use a relative unit or a smaller fixed value */
+  margin-left: auto; /* Center the block horizontally */
+  margin-right: auto; /* Center the block horizontally */
   color: white;
-  font-size: 50px;
+  font-size: clamp(30px, 5vw, 50px); /* Use clamp for responsive font size */
   text-align: center;
-  justify-content: center;
-  padding-top: 150px;
+  display: flex; /* Use flexbox for centering content */
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+  padding: 20px; /* Add some padding instead of just top-padding */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Media queries for more specific control on smaller screens if needed */
+@media (max-width: 768px) {
+  .colorful-bunch {
+    margin-top: 30px; /* Adjust margin for smaller screens */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .colorful-bunch {
+    font-size: clamp(
+      24px,
+      6vw,
+      40px
+    ); /* Adjust font size further for very small screens */
+    height: clamp(250px, 60vw, 400px);
+  }
 }
 .footer-style {
   width: 359px;
