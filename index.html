@@ -22,39 +22,25 @@
   <body>
     <header>
       <nav class="flex justify-between px-4 py-4 md:px-20 lg:px-20">
-        <div class="flex items-center  ">
-          <img
-            src="assets/logo.png"
-            alt="Logo"
-            class="h-6 w-auto md:h-12"
-          />
+        <div class="flex items-center">
+          <img src="assets/logo.png" alt="Logo" class="h-6 w-auto md:h-12" />
         </div>
 
-        <div class="hidden md:flex items-center pl-[200px] ml-[400px] space-x-8" >
-          <a
-            href="#"
-            class="text-base font-bold"
-            >Home</a
-          >
-          <a
-            href="#" style="color: #8987A1;"
-            >Shop</a
-          >
-          <a
-            href="#"style="color: #8987A1; "          
-            >About us</a
-          >
+        <div
+          class="hidden md:flex items-center pl-[200px] ml-[400px] space-x-8"
+        >
+          <a href="#" class="text-base font-bold">Home</a>
+          <a href="#" style="color: #8987a1">Shop</a>
+          <a href="#" style="color: #8987a1">About us</a>
         </div>
 
-        <!-- Cart Icon -->
         <div class="flex items-center space-x-2">
           <i class="fas fa-shopping-cart text-gray-600 text-lg"></i>
-          <span class=" text-gray-600 pr-5">Cart ($56)</span>
+          <span class="text-gray-600 pr-5">Cart ($56)</span>
         </div>
-
       </nav>
-      
-      <section class="header-body">
+
+      <!-- <section class="flex">
         <div>
           <h1 class="header-title">
             ALWAYS <span style="color: #e95a08"> FRESH FLOWERS </span>
@@ -70,100 +56,199 @@
         <div>
           <img class="hero-flower" src="assets/hero-flower.png" />
         </div>
-      </section>
+      </section> -->
     </header>
+
     <main>
       <section class="mb-20">
-        <div class="our-plant">
-          <h1 style="font-size: 50px; font-weight: bold;" > <samp style="color: #e95a08;">Our</samp> Plants</h1>
-          <p class="dark-2">Indulge your senses with the beauty and fragrance of our fresh flower shop. From <br> classic roses to exotic blooms, we offer a wide variety of fresh.</p>
-        </div> 
+        <div class="our-plant text-center px-4 py-8 md:px-8 md:py-16">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900">
+            <span class="text-orange-600">Our</span> Plants
+          </h1>
+          <p
+            class="dark-2 text-gray-700 text-base md:text-lg leading-relaxed mt-4 max-w-2xl mx-auto"
+          >
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
+
+        <!-- Product Cards Section - Made Mobile Responsive -->
         <div class="container mx-auto px-4 py-8">
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Product Card 1 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 2 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 3 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 4 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 5 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 6 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 7 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
-
-                <!-- Product Card 8 -->
-                <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4">
-                    <img src="assets/sample-flower-image.png" alt="Lily Blossom" class="w-full h-auto rounded-md mb-4 object-cover">
-                    <h3 class="text-lg font-semibold text-gray-800 mb-1">Lily Blossom</h3>
-                    <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 px-6 rounded-md uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full">
-                        Add to Cart
-                    </button>
-                </div>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Product Card 1 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+1';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
             </div>
+
+            <!-- Product Card 2 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+2';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+3';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 4 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+4';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 5 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+5';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 6 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+6';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 7 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+7';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+
+            <!-- Product Card 8 -->
+            <div
+              class="bg-white rounded-lg shadow-md overflow-hidden flex flex-col items-center p-4"
+            >
+              <img
+                src="assets/sample-flower-image.png"
+                alt="Lily Blossom"
+                class="w-full h-auto rounded-md mb-4 object-cover"
+                onerror="this.onerror=null;this.src='https://placehold.co/300x300/cccccc/333333?text=Flower+8';"
+              />
+              <h3 class="text-lg font-semibold text-gray-800 mb-1">
+                Lily Blossom
+              </h3>
+              <p class="text-xl font-bold text-gray-900 mb-4">20 USD</p>
+              <button
+                class="bg-orange-500 hover:bg-orange-600 text-white font-bold py-2 uppercase tracking-wide text-sm transition duration-300 ease-in-out w-full"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
         </div>
       </section>
-     
-      <section class="section-style">
+
+      <!-- <section class="section-style">
         <div class="image-container">
           <img
             src="assets/trusted-badge.png"
@@ -208,9 +293,9 @@
             </ul>
           </nav>
         </div>
-      </section>
+      </section> -->
 
-      <section>
+      <!-- <section>
         <div class="lates-deals">
           <h3 style="font-size: 50px">
             <span style="color: #e95a08">Latest</span> Deals
@@ -239,10 +324,10 @@
           <h3 class="title-style-zabo">25% Off | Zabo Plant</h3>
           <h3 style="text-align: center;"><a class="shop-now" href="#">Shop Now</a></h3>
         </div>
-      </section>
+      </section> -->
     </main>
 
-    <footer>
+    <!-- <footer>
       <section class="colorful-bunch">
         <div >
           <h1>Join the colorful Bunch</h1>
@@ -252,7 +337,7 @@
                   placeholder="Write email"
                   class=" max-w-[640px] w-full px-6 py-3  border-white bg-white text-gray-800 text-lg    "
               >
-              <!-- Subscribe button -->
+              
               <button
                   type="submit"
                   class="  px-8 py-3 bg-orange-600 hover:bg-orange-700 text-white font-semibold text-lg transform hover:scale-105 -ml-[15px] " >
@@ -296,6 +381,6 @@
           <img src="assets/icon-youtube.png">
         </div>
       </section>
-    </footer>
+    </footer> -->
   </body>
 </html>
